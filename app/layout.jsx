@@ -1,5 +1,7 @@
 import '@styles/globals.css'
-import { Children } from 'react'
+
+import Nav from '@components/Nav'
+import Provider from '@components/Provider'
 
 export const metadata = {
     title: 'Promptopia',
@@ -8,20 +10,21 @@ export const metadata = {
     author: 'Ha Le'
 }
 
-const RootLayout = ({children}) => {
-  return (
+const RootLayout = ({children}) => (
     <html>
         <body>
-            <div className='main'>
-                <div className="gradient" />
-            </div>
+            <Provider>
+                <div className='main'>
+                    <div className="gradient" />
+                </div>
 
-            <main className="app">
-                {children}
-            </main>
+                <main className="app">
+                    <Nav />
+                    {children}
+                </main>
+            </Provider>
         </body>
     </html>
-  )
-}
+)
 
 export default RootLayout

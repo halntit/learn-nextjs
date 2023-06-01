@@ -11,7 +11,7 @@ Source: https://www.youtube.com/watch?v=wm5gMKuwSYk
 - NextJs automatically code-splitting (lazy loading) (no need to use React.lazy)
 
 ## Build fullstack apps with NextJs:
-- NextJs
+- Next.Js
 - MongoDB
 - Express
 - NodeJs
@@ -23,3 +23,5 @@ Source: https://www.youtube.com/watch?v=wm5gMKuwSYk
 
 ## Deploy:
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Tests
